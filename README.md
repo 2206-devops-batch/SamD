@@ -27,8 +27,8 @@ A very simple Python application that takes Polyhadric dice information and give
 ![git components](img/myDice_Bash.png)
 
 ## Usage
-> Mydice //runs the program
-> MyDice [options]... Profile
+'Mydice' runs the program
+MyDice [options]... Profile
 ## Contact
 Sam Dare - samdr000@gmail.com
 Project Link: https://github.com/2206-devops-batch/SamD
