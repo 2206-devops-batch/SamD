@@ -1,3 +1,7 @@
+'''
+rev0.1
+'''
+
 # usage: my_dice.py [-h] [--sum] N [N ...]
 '''class Dice():
     def __init__(self, polyhedral_count = 6):
