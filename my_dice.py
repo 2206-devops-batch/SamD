@@ -74,13 +74,6 @@ def get_set(polyhedral_count):
         if value == "r" or value == "re" or value == "remove":
             my_list = my_list[:-1]     #slice item -1 off the end
             continue
-        if value == "save":
-            profile_name = input("save as what profile name: ")
-            if profile_name == "":
-                profile_name = str(datetime.datetime.now())
-                print(f"saved as {profile_name}")
-            else:
-
         try:
             value = int(value)
             if value > polyhedral_count:
@@ -94,7 +87,7 @@ def get_set(polyhedral_count):
             print("Invalid input:")
             continue
     return my_list
-'''
+
 def sort_set(polyhedral_count, my_sort_list, file_row):
     result_list = []
     for i in my_range(1, polyhedral_count, 1): 
@@ -108,7 +101,7 @@ def display_data(cnt, dta):
     for n in my_range(1, cnt, 1):
         new_dta = dta[2:]   #strp date and poly count off
         print(f"{n}: {new_dta[n-1]}") 
-'''
+
 def main():
  
     polyhedral_count=6
@@ -120,7 +113,7 @@ def main():
     print(rowx[0])
 
 
-    '''
+    
     print(f"\t loaded:  {get_row_from_file(filename, polyhedral_count)}")
 
     #build the row to be written to the file
@@ -137,7 +130,7 @@ def main():
     write_to_file(filename, file_data_row) 
 
     display_data(polyhedral_count, file_data_row)
-    '''
+    
 
     
 main()
